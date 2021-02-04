@@ -1,13 +1,12 @@
 from grade_calculation import grade_calculate, course_counter, quality_assurance, degree_class_check
 from data_storage import stg2_grades, stg3_grades
-from random import randint
+from tests import random_test
+
 
 # randomise grade scores for testing - remove when sure code is correct
-for value in stg2_grades.values():
-    value[1] = randint(1, 4)
-for value in stg3_grades.values():
-    value[1] = randint(1, 4)
+stg2_grades = random_test(stg2_grades)
 print(stg2_grades)
+stg3_grades = random_test(stg3_grades)
 print(stg3_grades)
 
 num_courses = course_counter(stg2_grades) + course_counter(stg3_grades)
