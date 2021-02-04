@@ -8,15 +8,23 @@ https://help.open.ac.uk/documents/policies/working-out-your-class-of-honours/fil
 The overview is:
 
 For credits earned at stage 2 and stage 3 of study:
+
 First class - 630 or less weighted grade credits
+
 Upper second class - 631 to 900 weighted grade credits
+
 Lower second class - 901 to 1170 weighted grade credit
+
 Third class - 1171 to 1440 weighted grade credit
 
 Thresholds used in the quality assurance test (best 60 credits at stage 3)
+
 First class - at least 60 credits at Distinction grad
+
 Upper second class - 61 to 120 grade credits
+
 Lower second class - 121 to 180 grade credits
+
 Third class - 181 to 240 grade credits
 
 Module grades are currently held in the data_storage.py file and this needs updated manually to change studied modules and grades. 
