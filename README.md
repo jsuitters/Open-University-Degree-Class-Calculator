@@ -2,6 +2,7 @@
 A simple python project to calculate the final degree class of an open university bachelor's degree.
 
 Calculates the degree classification based on this guide:
+
 https://help.open.ac.uk/documents/policies/working-out-your-class-of-honours/files/50/honours-class-working-out.pdf
 
 The overview is:
