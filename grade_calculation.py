@@ -1,4 +1,5 @@
 # calculates grade based on info in data_storage.py
+# module contains functions used in the calculation of the degree class
 
 def grade_calculate(grades):
     total = 0
@@ -44,7 +45,6 @@ def quality_assurance(grades):
         quality_score = sixty_credits
     else:
         quality_score = thirty_credits
-
     return quality_score
 
 
