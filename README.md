@@ -27,6 +27,6 @@ Lower second class - 121 to 180 grade credits
 
 Third class - 181 to 240 grade credits
 
-Module grades are currently held in the data_storage.py file and this needs updated manually to change studied modules and grades. 
+Module grades are currently held in a CSV file and are added to dictionary in data_storage.py
 
 
