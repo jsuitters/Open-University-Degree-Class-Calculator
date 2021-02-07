@@ -9,11 +9,14 @@ fill_grades_dict(stg3_grades, 3)
 
 num_courses = course_counter(stg2_grades) + course_counter(stg3_grades)
 
-if num_courses > 240:
-    print(f"Too many credits entered!")
+if num_courses < 240:
+    credits_short = 240 - num_courses
+    print(f"Too few credits entered! You need to add {credits_short} additional credits.")
 
-elif num_courses < 240:
-    print(f"Too few credits entered!")
+elif num_courses > 240:
+    credits_over = num_courses - 240
+    print(f"Too many credits entered! You need to remove {credits_over} credits.")
+
 
 else:
     stage_2 = grade_calculate(stg2_grades)
