@@ -1,7 +1,11 @@
 from grade_calculation import grade_calculate, course_counter, quality_assurance, degree_class_check
-from data_storage import stg2_grades, stg3_grades
+from data_storage import stg2_grades, stg3_grades, fill_dict
 # from tests import random_test
 
+fill_dict(stg2_grades, 2)
+fill_dict(stg3_grades, 3)
+# random_test(stg2_grades)
+# random_test(stg3_grades)
 
 num_courses = course_counter(stg2_grades) + course_counter(stg3_grades)
 
