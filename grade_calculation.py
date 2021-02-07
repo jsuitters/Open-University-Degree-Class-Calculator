@@ -49,6 +49,7 @@ def quality_assurance(grades):
 
 
 def degree_class_check(grade, quality):
+    degree_class = "Undetermined"
     if quality <= 60 and grade <= 630:
         degree_class = "First"
     elif quality <= 120 and grade <= 900:
