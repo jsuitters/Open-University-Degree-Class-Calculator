@@ -4,7 +4,7 @@ import csv
 
 
 def fill_dict(grades, level):
-    with open('Grades.csv', 'r') as csv_file:
+    with open('grades_file.csv', 'r') as csv_file:
         csv_read = csv.reader(csv_file)
         next(csv_read)
         for line in csv_read:
