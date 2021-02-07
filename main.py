@@ -1,9 +1,9 @@
 from grade_calculation import grade_calculate, course_counter, quality_assurance, degree_class_check
-from data_storage import stg2_grades, stg3_grades, fill_dict
+from data_storage import stg2_grades, stg3_grades, fill_grades_dict
 # from tests import random_test
 
-fill_dict(stg2_grades, 2)
-fill_dict(stg3_grades, 3)
+fill_grades_dict(stg2_grades, 2)
+fill_grades_dict(stg3_grades, 3)
 # random_test(stg2_grades)
 # random_test(stg3_grades)
 

@@ -3,8 +3,8 @@
 import csv
 
 
-def fill_dict(grades, level):
-    with open('grades_file.csv', 'r') as csv_file:
+def fill_grades_dict(grades, level):
+    with open('grades_data.csv', 'r') as csv_file:
         csv_read = csv.reader(csv_file)
         next(csv_read)
         for line in csv_read:
