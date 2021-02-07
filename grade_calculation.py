@@ -57,6 +57,4 @@ def degree_class_check(grade, quality):
         degree_class = "2:2"
     elif quality <= 240 and grade <= 1440:
         degree_class = "Third"
-    else:
-        degree_class = "Unexpected error - you should not be here!"
     return degree_class
