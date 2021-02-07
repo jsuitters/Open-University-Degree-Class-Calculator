@@ -12,7 +12,7 @@ def fill_dict(grades, level):
             course_code = course_col[::-1]
             if int(course_code[2]) == level:
                 grades[line[0]] = [int(line[1]), int(line[2])]
-            elif level == 3 and int(course_code[2]) > 3:
+            elif level == 3 and int(course_code[2]) == 4:  # level 3 course can have a 3 or 4 in code
                 grades[line[0]] = [int(line[1]), int(line[2])]
     return grades
 
