@@ -1,13 +1,14 @@
-from grade_calculation import grade_calculate, course_counter, quality_assurance, degree_class_check
-from data_storage import stg2_grades, stg3_grades, fill_grades_dict
+import grade_calculation
+import data_storage
 # from tests import random_test
 
-fill_grades_dict(stg2_grades, 2)  # stage 2
-fill_grades_dict(stg3_grades, 3)  # stage 3
+data_storage.fill_grades_dict(data_storage.stg2_grades, 2)  # stage 2
+data_storage.fill_grades_dict(data_storage.stg3_grades, 3)  # stage 3
 # random_test(stg2_grades)
 # random_test(stg3_grades)
 
-num_courses = course_counter(stg2_grades) + course_counter(stg3_grades)
+num_courses = grade_calculation.course_counter(data_storage.stg2_grades) +\
+              grade_calculation.course_counter(data_storage.stg3_grades)
 
 if num_courses < 240:
     credits_short = 240 - num_courses
@@ -19,14 +20,14 @@ elif num_courses > 240:
 
 
 else:
-    stage_2 = grade_calculate(stg2_grades)
-    stage_3 = grade_calculate(stg3_grades)
+    stage_2 = grade_calculation.grade_calculate(data_storage.stg2_grades)
+    stage_3 = grade_calculation.grade_calculate(data_storage.stg3_grades)
 
     final_grade = stage_2 + stage_3
     print(f"Final credit mark is {final_grade}")
 
-    quality_check = quality_assurance(stg3_grades)
+    quality_check = grade_calculation.quality_assurance(data_storage.stg3_grades)
     print(f"Quality score is {quality_check}")
 
-    degree_class = degree_class_check(final_grade, quality_check)
+    degree_class = grade_calculation.degree_class_check(final_grade, quality_check)
     print(f"Your degree class is: {degree_class}")
