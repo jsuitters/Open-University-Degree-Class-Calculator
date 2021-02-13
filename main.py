@@ -2,8 +2,8 @@ import grade_calculation
 import data_storage
 # from tests import random_test
 
-data_storage.fill_grades_dict(data_storage.stg2_grades, 2)  # stage 2
-data_storage.fill_grades_dict(data_storage.stg3_grades, 3)  # stage 3
+data_storage.fill_grades_dict(data_storage.stg2_grades, 2)  # stage 2 grades
+data_storage.fill_grades_dict(data_storage.stg3_grades, 3)  # stage 3 grades
 # random_test(stg2_grades)
 # random_test(stg3_grades)
 
