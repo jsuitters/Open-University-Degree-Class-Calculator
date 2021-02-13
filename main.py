@@ -30,4 +30,4 @@ else:
     print(f"Quality score is {quality_check}")
 
     degree_class = grade_calculation.degree_class_check(final_grade, quality_check)
-    print(f"Your degree class is: {degree_class}")
+    print(f"Your degree class is: {degree_class}\n")
